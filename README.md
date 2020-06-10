@@ -12,12 +12,16 @@ top-down attentionとbottom-up attentionが知られている．
 # Fisher情報量とKL-divergence
 
 ### Fisher情報量
-未知母数$\theta \in \Theta \subset \mathbb{R}^d$に依存する$\mathbb{R}^m$上の確率変数$X \sim p(x; \theta)$の
+未知母数
+<img src="https://latex.codecogs.com/gif.latex?\dpi{150}&space;\theta&space;\in&space;\mathbb{R}^d" />
+に依存する
+<img src="https://latex.codecogs.com/gif.latex?\dpi{150}&space;\mathbb{R}^m" />
+上の確率変数
+<img src="https://latex.codecogs.com/gif.latex?\dpi{150}&space;X\simp(x;\theta)" />
+の
 対数尤度関数$\ell(\theta \vert x) = \log p(x \vert \theta)$に対して，Score関数
 
-$$
-    g(\theta; X) = \nabla_{θ} \ell(\theta; X)
-$$
+<img src="https://latex.codecogs.com/gif.latex?\dpi{150}&space;g(\theta;&space;X)&space;=&space;\nabla_{\theta}&space;\ell(\theta;&space;X)" />
 
 が定義される．
 ここで，$g$の1次モーメントは$\mathbb{E}_X[g(\theta | X)] = {\bf 0}$となることが知られており，
@@ -30,9 +34,7 @@ $$
 
 確率分布間の擬距離であるKL-divergence
 
-$$
-    D_{KL}(p_{\theta_1}, p_{\theta_2}) = \int p(x \vert \theta_1) \log \frac{p(x \vert \theta_1)}{p(x \vert \theta_2)} dx
-$$
+<img src="https://latex.codecogs.com/gif.latex?\dpi{150}&space;D_{KL}(p_{\theta_1},&space;p_{\theta_2})&space;=&space;\int&space;p(x&space;\vert&space;\theta_1)&space;\log&space;\frac{p(x&space;\vert&space;\theta_1)}{p(x&space;\vert&space;\theta_2)}&space;dx" />
 
 について，2次までのMaclaurin展開をすると，
 
