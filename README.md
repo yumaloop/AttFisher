@@ -13,11 +13,11 @@ top-down attentionとbottom-up attentionが知られている．
 
 ### Fisher情報量
 未知母数
-<img src="https://latex.codecogs.com/gif.latex?\dpi{150}&space;\theta&space;\in&space;\mathbb{R}^d" />
+<img src="https://latex.codecogs.com/gif.latex?\dpi{100}&space;\theta&space;\in&space;\mathbb{R}^d" />
 に依存する
-<img src="https://latex.codecogs.com/gif.latex?\dpi{150}&space;\mathbb{R}^m" />
+<img src="https://latex.codecogs.com/gif.latex?\dpi{100}&space;\mathbb{R}^m" />
 上の確率変数
-<img src="https://latex.codecogs.com/gif.latex?\dpi{150}&space;X&space;\sim&space;p(x;\theta)" />
+<img src="https://latex.codecogs.com/gif.latex?\dpi{100}&space;X&space;\sim&space;p(x;\theta)" />
 の
 対数尤度関数
 <img src="https://latex.codecogs.com/gif.latex?\dpi{150}&space;\ell(\theta&space;\vert&space;x)&space;=&space;\log&space;p(x&space;\vert&space;\theta)" />
