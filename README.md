@@ -20,22 +20,24 @@ top-down attentionとbottom-up attentionが知られている．
 <img src="https://latex.codecogs.com/gif.latex?\dpi{100}&space;X&space;\sim&space;p(x;\theta)" />
 の
 対数尤度関数
-<img src="https://latex.codecogs.com/gif.latex?\dpi{150}&space;\ell(\theta&space;\vert&space;x)&space;=&space;\log&space;p(x&space;\vert&space;\theta)" />
+<img src="https://latex.codecogs.com/gif.latex?\dpi{100}&space;\ell(\theta&space;\vert&space;x)&space;=&space;\log&space;p(x&space;\vert&space;\theta)" />
 に対して，Score関数
+
 <img src="https://latex.codecogs.com/gif.latex?\dpi{150}&space;g(\theta;&space;X)&space;=&space;\nabla_{\theta}&space;\ell(\theta;&space;X)" />
+
 が定義される．
 ここで，
-<img src="https://latex.codecogs.com/gif.latex?\dpi{150}&space;g" />
+<img src="https://latex.codecogs.com/gif.latex?\dpi{100}&space;g" />
 の1次モーメントは
-<imf src="https://latex.codecogs.com/gif.latex?\dpi{150}&space;\mathbb{E}_X[g(\theta&space;|&space;X)]&space;=&space;{\bf&space;0}" />
+<imf src="https://latex.codecogs.com/gif.latex?\dpi{100}&space;\mathbb{E}_X[g(\theta&space;|&space;X)]&space;=&space;{\bf&space;0}" />
 となることが知られており，
 2次モーメント
-<img src="https://latex.codecogs.com/gif.latex?\dpi{150}&space;{Var}_X[g(\theta&space;|&space;X)]&space;=&space;\mathbb{E}_{X}[{g(\theta&space;|&space;X)}^2]" />
+<img src="https://latex.codecogs.com/gif.latex?\dpi{100}&space;{Var}_X[g(\theta&space;|&space;X)]&space;=&space;\mathbb{E}_{X}[{g(\theta&space;|&space;X)}^2]" />
 をFisher情報量行列と呼び，
 これは，
-<img src="https://latex.codecogs.com/gif.latex?\dpi{150}&space;\theta" />
+<img src="https://latex.codecogs.com/gif.latex?\dpi{100}&space;\theta" />
 の対数尤度関数
-<img src="https://latex.codecogs.com/gif.latex?\dpi{150}&space;\ell(\theta;&space;X)&space;=&space;\log&space;p(X&space;\vert&space;\theta)" />
+<img src="https://latex.codecogs.com/gif.latex?\dpi{100}&space;\ell(\theta;&space;X)&space;=&space;\log&space;p(X&space;\vert&space;\theta)" />
 に対するHessian行列の期待値として以下のように定義される．
 
 <img src="https://latex.codecogs.com/gif.latex?\dpi{150}\begin{align}&space;G(\theta)&space;&=&space;\mathbb{E}_{X}[&space;\nabla^2_{\theta}&space;\ell(\theta;&space;X)&space;]&space;\nonumber&space;\\&space;&=&space;\mathbb{E}_{X}&space;\left(&space;\begin{array}{cccc}&space;\frac{\partial^2&space;\ell(\theta;&space;X)}{\partial&space;\theta_1^2}&space;&&space;\frac{\partial&space;\ell(\theta;&space;X)}{\partial&space;\theta_1&space;\partial&space;\theta_2}&space;&&space;\ldots&space;&&space;\frac{\partial&space;\ell(\theta;&space;X)}{\partial&space;\theta_1&space;\partial&space;\theta_d}&space;\\&space;\frac{\partial&space;\ell(\theta;&space;X)}{\partial&space;\theta_2&space;\partial&space;\theta_1}&space;&&space;\frac{\partial^2&space;\ell(\theta;&space;X)}{\partial&space;\theta_2^2}&space;&&space;\ldots&space;&&space;\frac{\partial&space;\ell(\theta;&space;X)}{\partial&space;\theta_2&space;\partial&space;\theta_d}&space;\\&space;\vdots&space;&&space;\vdots&space;&&space;\ddots&space;&&space;\vdots&space;\\&space;\frac{\partial&space;\ell(\theta;&space;X)}{\partial&space;\theta_d&space;\partial&space;\theta_1}&space;&&space;\frac{\partial&space;\ell(\theta;&space;X)}{\partial&space;\theta_d&space;\partial&space;\theta_2}&space;&&space;\ldots&space;&&space;\frac{\partial^2&space;\ell(\theta;&space;X)}{\partial&space;\theta_d^2}&space;\end{array}&space;\right)&space;\nonumber&space;\end{align}" />
