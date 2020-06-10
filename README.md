@@ -24,24 +24,7 @@ $$
 2次モーメント${Var}_X[g(\theta | X)] = \mathbb{E}_{X}[{g(\theta | X)}^2]$をFisher情報量行列と呼び，
 これは，$\theta$の対数尤度関数$\ell(\theta; X) = \log p(X \vert \theta)$に対するHessian行列の期待値として以下のように定義される．
 
-<img src="https://latex.codecogs.com/gif.latex?\begin{align}&space;G(\theta)&space;&=&space;\mathbb{E}_{X}[&space;\nabla^2_{\theta}&space;\ell(\theta;&space;X)&space;]&space;\nonumber&space;\\&space;&=&space;\mathbb{E}_{X}&space;\left(&space;\begin{array}{cccc}&space;\frac{\partial^2&space;\ell(\theta;&space;X)}{\partial&space;\theta_1^2}&space;&&space;\frac{\partial&space;\ell(\theta;&space;X)}{\partial&space;\theta_1&space;\partial&space;\theta_2}&space;&&space;\ldots&space;&&space;\frac{\partial&space;\ell(\theta;&space;X)}{\partial&space;\theta_1&space;\partial&space;\theta_d}&space;\\&space;\frac{\partial&space;\ell(\theta;&space;X)}{\partial&space;\theta_2&space;\partial&space;\theta_1}&space;&&space;\frac{\partial^2&space;\ell(\theta;&space;X)}{\partial&space;\theta_2^2}&space;&&space;\ldots&space;&&space;\frac{\partial&space;\ell(\theta;&space;X)}{\partial&space;\theta_2&space;\partial&space;\theta_d}&space;\\&space;\vdots&space;&&space;\vdots&space;&&space;\ddots&space;&&space;\vdots&space;\\&space;\frac{\partial&space;\ell(\theta;&space;X)}{\partial&space;\theta_d&space;\partial&space;\theta_1}&space;&&space;\frac{\partial&space;\ell(\theta;&space;X)}{\partial&space;\theta_d&space;\partial&space;\theta_2}&space;&&space;\ldots&space;&&space;\frac{\partial^2&space;\ell(\theta;&space;X)}{\partial&space;\theta_d^2}&space;\end{array}&space;\right)&space;\nonumber&space;\end{align}" />
-
-$$
-\begin{align}
-    G(\theta)     
-    &= \mathbb{E}_{X}[ \nabla^2_{θ} \ell(\theta; X) ] \\
-    &= \mathbb{E}_{X}
-      \left(
-          \begin{array}{cccc}
-                \frac{\partial^2 \ell(\theta; X)}{\partial \theta_1^2} & \frac{\partial \ell(\theta; X)}{\partial \theta_1 \partial \theta_2} & \ldots & \frac{\partial \ell(\theta; X)}{\partial \theta_1 \partial \theta_d} \\
-                      \frac{\partial \ell(\theta; X)}{\partial \theta_2 \partial \theta_1} & \frac{\partial^2 \ell(\theta; X)}{\partial \theta_2^2} & \ldots & \frac{\partial \ell(\theta; X)}{\partial \theta_2 \partial \theta_d} \\
-                            \vdots & \vdots & \ddots & \vdots \\
-                                  \frac{\partial \ell(\theta; X)}{\partial \theta_d \partial \theta_1} & \frac{\partial \ell(\theta; X)}{\partial \theta_d \partial \theta_2} & \ldots & \frac{\partial^2 \ell(\theta; X)}{\partial \theta_d^2} 
-                                      \end{array}
-                                        \right)
-\end{align}
-$$
-
+<img src="https://latex.codecogs.com/gif.latex?\dpi{150}\begin{align}&space;G(\theta)&space;&=&space;\mathbb{E}_{X}[&space;\nabla^2_{\theta}&space;\ell(\theta;&space;X)&space;]&space;\nonumber&space;\\&space;&=&space;\mathbb{E}_{X}&space;\left(&space;\begin{array}{cccc}&space;\frac{\partial^2&space;\ell(\theta;&space;X)}{\partial&space;\theta_1^2}&space;&&space;\frac{\partial&space;\ell(\theta;&space;X)}{\partial&space;\theta_1&space;\partial&space;\theta_2}&space;&&space;\ldots&space;&&space;\frac{\partial&space;\ell(\theta;&space;X)}{\partial&space;\theta_1&space;\partial&space;\theta_d}&space;\\&space;\frac{\partial&space;\ell(\theta;&space;X)}{\partial&space;\theta_2&space;\partial&space;\theta_1}&space;&&space;\frac{\partial^2&space;\ell(\theta;&space;X)}{\partial&space;\theta_2^2}&space;&&space;\ldots&space;&&space;\frac{\partial&space;\ell(\theta;&space;X)}{\partial&space;\theta_2&space;\partial&space;\theta_d}&space;\\&space;\vdots&space;&&space;\vdots&space;&&space;\ddots&space;&&space;\vdots&space;\\&space;\frac{\partial&space;\ell(\theta;&space;X)}{\partial&space;\theta_d&space;\partial&space;\theta_1}&space;&&space;\frac{\partial&space;\ell(\theta;&space;X)}{\partial&space;\theta_d&space;\partial&space;\theta_2}&space;&&space;\ldots&space;&&space;\frac{\partial^2&space;\ell(\theta;&space;X)}{\partial&space;\theta_d^2}&space;\end{array}&space;\right)&space;\nonumber&space;\end{align}" />
 
 ### KL-divergence
 
@@ -53,8 +36,6 @@ $$
 
 について，2次までのMaclaurin展開をすると，
 
-$$        
-    D_{KL}(p_{\theta}, p_{\theta + \Delta \theta}) \approx \frac{1}{2} {\Delta \theta}^T G(\theta) \Delta \theta 
-$$
+<img src="https://latex.codecogs.com/gif.latex?\dpi{150}&space;D_{KL}(p_{\theta},&space;p_{\theta&space;&plus;&space;\Delta&space;\theta})&space;\approx&space;\frac{1}{2}&space;{\Delta&space;\theta}^T&space;G(\theta)&space;\Delta&space;\theta" />
 
 となる．
