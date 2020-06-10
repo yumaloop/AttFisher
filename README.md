@@ -1,4 +1,4 @@
-# AttFisher
+# AttFisher: A Computation of Visual Attention with Fisher Information Matrix
 
 
 # はじめに
@@ -16,7 +16,7 @@ top-down attentionとbottom-up attentionが知られている．
 対数尤度関数$\ell(\theta \vert x) = \log p(x \vert \theta)$に対して，Score関数
 
 $$
-    g(\theta; X) &= \nabla_{θ} \ell(\theta; X)
+    g(\theta; X) = \nabla_{θ} \ell(\theta; X)
 $$
 
 が定義される．
