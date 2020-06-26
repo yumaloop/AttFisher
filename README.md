@@ -54,6 +54,9 @@ top-down attentionとbottom-up attentionが知られている．
 
 となる．
 
+### 確率モデルとの関係．
+
+...
 
 ## Experiments
 
