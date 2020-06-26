@@ -53,3 +53,10 @@ top-down attentionとbottom-up attentionが知られている．
 <img src="https://latex.codecogs.com/gif.latex?\dpi{150}&space;D_{KL}(p_{\theta},&space;p_{\theta&space;&plus;&space;\Delta&space;\theta})&space;\approx&space;\frac{1}{2}&space;{\Delta&space;\theta}^T&space;G(\theta)&space;\Delta&space;\theta" />
 
 となる．
+
+
+## Experiments
+
+#### VAE on MNIST
+
+![img0](https://github.com/yumaloop/AttFisher/blob/master/figures/mnist_test300.png)
