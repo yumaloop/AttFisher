@@ -59,4 +59,12 @@ top-down attentionとbottom-up attentionが知られている．
 
 #### VAE on MNIST
 
+![img0](https://github.com/yumaloop/AttFisher/blob/master/figures/mnist_test10.png)
+
+![img0](https://github.com/yumaloop/AttFisher/blob/master/figures/mnist_test100.png)
+
+![img0](https://github.com/yumaloop/AttFisher/blob/master/figures/mnist_test100.png)
+
 ![img0](https://github.com/yumaloop/AttFisher/blob/master/figures/mnist_test300.png)
+
+![img0](https://github.com/yumaloop/AttFisher/blob/master/figures/mnist_test3000.png)
